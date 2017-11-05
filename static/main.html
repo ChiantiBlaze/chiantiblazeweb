@@ -1,1 +1,87 @@
-Chianti Blaze Web
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chianti Blaze Web</title>
+	<!-- Bootstrap -->
+	<script type="text/javascript" src="/static/bootstrap/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="/static/bootstrap/popper.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" src="/static/bootstrap/bootstrap.min.js"></script>
+
+	<!-- Progress bar -->
+	<link rel="stylesheet" type="text/css" href="/static/progressbar/progressbar.css">
+	<script type="text/javascript" src="/static/progressbar/progressbar.js"></script>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="/static/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<!-- CSS & JS -->
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/navbar.css">
+	<script type="text/javascript" src="/static/js/main.js"></script>
+</head>
+<body>
+	<!-- Nav Bar -->
+	<progress value="0" id="progressBar">
+	  <div class="progress-container">
+	    <span class="progress-bar"></span>
+	  </div>
+	</progress>
+	<div id="navbar">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="title-holder">
+					<a href="javascript:void(0);">
+						<div class="profile-img"></div>
+						<div class="title">@ChiantiBlaze</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="item"><a href="javascript:void(0);" onclick='window.open("http://blog.icecastle.me");return false;'><span>Blog <i class="fa fa-tasks"></i></span></a></div>
+					</div>
+					<div class="col-sm-3">
+						<div class="item"><a href="javascript:void(0);" onclick='window.open("https://github.com/chiantiblaze");return false;'><span>GitHub <i class="fa fa-github"></i></span></a></div>
+					</div>
+					<div class="col-sm-3">
+						<div class="item"><a href="javascript:void(0);" onclick='window.open("https://twitter.com/chiantiblaze");return false;'><span>Twitter <i class="fa fa-twitter"></i></span></a></div>
+					</div>
+					<div class="col-sm-3">
+						<div class="item"><a href="javascript:$('#paypal').submit();"><span>PayPal  <i class="fa fa-paypal"></i></span></a></div>
+						<!-- Paypal Hidden Src-->
+						<form id="paypal" style="display:none" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+							<input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="frame fullheight landing-frame">
+		<div class="holder">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="rose-img"></div>	
+				</div>
+				<div class="col-sm-6">
+					<div class="text-wrap">
+						CHIA<br>
+						NTIB<br>
+						LAZE
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="frame">
+		<div>
+		</div>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	</div>
+</body>
+</html>
