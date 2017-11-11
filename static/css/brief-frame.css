@@ -1,0 +1,21 @@
+#brief-frame .holder{
+	margin: 0 auto;
+	width: 900px;
+	height: 400px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	/*background: lightblue;*/
+}
+
+
+#brief-frame .profile-img{
+	width: 280px;
+	height: 400px;
+	border: 1px solid #ccc;
+}
+
+#brief-frame .text{
+	position: absolute;
+	bottom: 0;
+}
